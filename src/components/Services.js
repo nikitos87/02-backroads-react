@@ -1,3 +1,5 @@
+import Title from "./Title";
+
 const services = [
   {
     icon: "fas fa-wallet fa-fw",
@@ -22,11 +24,7 @@ const services = [
 const Services = () => {
   return (
     <section className="section services" id="services">
-      <div className="section-title">
-        <h2>
-          our <span>services</span>
-        </h2>
-      </div>
+      <Title main="our" sub="services" />
       <div className="section-center services-center">
         {services.map((service, idx) => {
           return (

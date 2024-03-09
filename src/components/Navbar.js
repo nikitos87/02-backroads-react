@@ -46,7 +46,12 @@ const Navbar = ({ icons }) => {
           {icons.map((icon, idx) => {
             return (
               <li key={idx}>
-                <a href={icon.href} target="_blank" className="nav-icon">
+                <a
+                  href={icon.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="nav-icon"
+                >
                   <i className={icon.icon}></i>
                 </a>
               </li>
